@@ -1,9 +1,9 @@
 :root {
   --bg: #1a1a2e;
   --fg: #eaeaea;
-  --accent: #4ecdc4;
+  --accent: #ffb347;
   --x-color: #ff6b6b;
-  --o-color: #4ecdc4;
+  --o-color: #ffb347;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
