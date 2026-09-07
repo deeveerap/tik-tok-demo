@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <p id="status" class="status">Player X's turn</p>
+    <div id="board" class="board">
+      {% for i in range(9) %}
+        <button class="cell" data-index="{{ i }}" aria-label="Cell {{ i }}"></button>
+      {% endfor %}
+    </div>
+    <button id="reset" class="reset">New Game</button>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
